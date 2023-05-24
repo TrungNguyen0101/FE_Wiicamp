@@ -6,12 +6,12 @@ export interface Props {}
 const Header: NextPage<Props> = () => {
   return (
     <header className="header">
-      <div className="container">
-        <div className="header_title">
-          <h2 className="header_title-name">
+      <div className="container header_title">
+        <div className="header_desc">
+          <h2 className="header_desc-name">
             Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
           </h2>
-          <a href="#" className="header_title-link">
+          <a href="#" className="header_desc-link">
             ShopNow
           </a>
         </div>

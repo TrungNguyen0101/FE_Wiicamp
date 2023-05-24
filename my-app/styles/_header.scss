@@ -1,16 +1,22 @@
 .header {
   color: $text-color;
   background-color: $black-color;
-  text-align: center;
-  justify-self: center;
-  display: flex;
   padding: 12px 0;
   line-height: 21px;
   &_title {
-    display: inline;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+  &_desc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
     &-name {
+      margin-bottom: 0;
       font-size: 14px;
-      display: inline;
       margin-right: 8px;
     }
     &-link {
