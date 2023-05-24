@@ -5,7 +5,7 @@ import view from "@/public/images/Quick View.png";
 import heart from "@/public/images/Wishlist.png";
 import star from "@/public/images/Vector.png";
 export interface Props {}
-const Item: NextPage<Props> = () => {
+const ItemSales: NextPage<Props> = () => {
   return (
     <div className="sales_item">
       <div className="sales_item-show">
@@ -40,4 +40,4 @@ const Item: NextPage<Props> = () => {
     </div>
   );
 };
-export default Item;
+export default ItemSales;

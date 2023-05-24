@@ -1,0 +1,24 @@
+.category {
+  margin-top: 89px;
+  padding-bottom: 70px !important;
+  border-bottom: 1px solid #000;
+  margin-bottom: 79px;
+  &_list {
+    display: flex;
+    margin-top: 60px;
+    // gap: 0 30px;
+    text-align: center;
+  }
+  &_item {
+    width: calc((100% / 6) - 30px);
+    padding: 24px 51px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    transition: all 0.5s ease;
+    text-align: center;
+    &:hover {
+      background-color: $red-color;
+    }
+    margin: 0 15px;
+  }
+}
