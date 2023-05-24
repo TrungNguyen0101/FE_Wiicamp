@@ -1,13 +1,16 @@
 body {
-  // max-width: 1440px;
   font-family: "Poppins", sans-serif !important;
+  // width: auto;
+}
+.wrapper {
+  width: calc(100% + 16px);
+  // max-width: 1440px;
 }
 .container {
   max-width: 1028px;
-
   padding: 0 !important;
 }
-@media (min-width: 1400px) {
+@media (min-width: 1440px) {
   .container,
   .container-lg,
   .container-md,

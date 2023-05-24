@@ -10,7 +10,7 @@ const ItemSales: NextPage<Props> = () => {
     <div className="sales_item">
       <div className="sales_item-show">
         <div className="sales_item-image">
-          <Image src={image} alt="" className="image"></Image>
+          <Image src={image} alt=""></Image>
         </div>
         <span className="sales_item-discount">-40%</span>
         <div className="sales_item-icon">

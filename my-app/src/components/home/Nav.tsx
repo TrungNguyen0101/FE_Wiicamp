@@ -6,7 +6,7 @@ import search from "@/public/images/search.png";
 export interface Props {}
 const Nav: NextPage<Props> = () => {
   return (
-    <nav className="navs container">
+    <nav className="container navs ">
       <h2 className="navs_title">Exclusive</h2>
       <ul className="navs_menu nav nav-underline justify-content-center">
         <li className="nav-item">

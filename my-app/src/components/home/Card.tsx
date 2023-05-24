@@ -5,21 +5,21 @@ import banner from "@/public/images/banner.png";
 export interface Props {}
 const Card: NextPage<Props> = () => {
   return (
-    <section className="card">
-      <div className="container card1">
-        <div className="card-menu">
+    <section className="container card1 ">
+      <div className="">
+        <div className="card1-menu mr-[16px] pr-[16px]">
           <nav className="nav flex-column ">
-            <div className="card_menu-item">
+            <div className="card1_menu-item">
               <a className="nav-link active" aria-current="page" href="#">
                 Woman’s Fashion
               </a>
-              <Image src={left} alt="" className="card_menu-icon"></Image>
+              <Image src={left} alt="" className="card1_menu-icon"></Image>
             </div>
-            <div className="card_menu-item">
+            <div className="card1_menu-item">
               <a className="nav-link" href="#">
                 Men’s Fashion
               </a>
-              <Image src={left} alt="" className="card_menu-icon"></Image>
+              <Image src={left} alt="" className="card1_menu-icon"></Image>
             </div>
             <a className="nav-link" href="#">
               Electronics
@@ -32,9 +32,9 @@ const Card: NextPage<Props> = () => {
             <a className="nav-link">Health & Beauty</a>
           </nav>
         </div>
-        <div className="card_image">
-          <Image src={banner} alt=""></Image>
-        </div>
+      </div>
+      <div className="card1_image">
+        <Image src={banner} alt=""></Image>
       </div>
     </section>
   );

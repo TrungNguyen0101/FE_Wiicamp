@@ -1,7 +1,11 @@
-.card {
-  border: 0 !important;
+.card1 {
+  // border: 0 !important;
+  // border-radius: 0 !important;
   border-top: 0.5px solid #000000 !important;
-  border-radius: 0 !important;
+  display: flex !important;
+  flex-direction: row !important;
+  // justify-content: center;
+  align-items: stretch;
   &_menu {
     &-item {
       display: flex;
@@ -13,7 +17,7 @@
     }
   }
   &-menu {
-    padding-right: 16px;
+    // padding-right: 16px;
     box-sizing: border-box;
     padding-top: 40px;
     width: 217px;
@@ -25,9 +29,9 @@
   }
 }
 .card1 {
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
+  // display: flex;
+  // justify-content: center;
+  // align-items: stretch;
 }
 .nav {
   position: relative;

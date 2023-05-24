@@ -74,6 +74,8 @@
     gap: 0 30px;
   }
   &_item {
+    width: calc((100% / 4));
+    // padding: 0 30px;
     &-discount {
       padding: 4px 12px;
       background-color: $red-color;
@@ -90,7 +92,6 @@
       justify-content: center;
       align-items: center;
       flex-direction: column;
-
       position: absolute;
       top: 12px;
       right: 12px;
@@ -129,13 +130,15 @@
       padding: 49px;
       background: #f5f5f5;
       border-radius: 4px;
+      img {
+        // left: calc(50% - 172px / 2) !important;
+        // top: calc(50% - 152px / 2) !important;
+        max-width: none !important;
+      }
     }
   }
 }
-.image {
-  left: calc(50% - 172px / 2);
-  top: calc(50% - 152px / 2);
-}
+
 .btn {
   padding: 16px 48px !important;
   &-123 {
