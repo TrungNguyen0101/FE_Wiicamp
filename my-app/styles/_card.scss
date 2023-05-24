@@ -1,0 +1,46 @@
+.card {
+  border: 0 !important;
+  border-top: 0.5px solid #000000 !important;
+  border-radius: 0 !important;
+  &_menu {
+    &-item {
+      display: flex;
+    }
+    padding-right: 16px;
+    &-icon {
+      position: absolute;
+      right: 0;
+    }
+  }
+  &-menu {
+    padding-right: 16px;
+    box-sizing: border-box;
+    padding-top: 40px;
+    width: 217px;
+    border-right: 0.5px solid #000000;
+  }
+  &_image {
+    padding-left: 45px;
+    padding-top: 40px;
+  }
+}
+.card1 {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+.nav {
+  position: relative;
+  &-link {
+    display: inline-block;
+    width: auto;
+    padding: 0 !important;
+    margin-bottom: 16px;
+  }
+  &-link:last-child {
+    display: inline-block;
+    width: auto;
+    padding: 0 !important;
+    margin-bottom: 0;
+  }
+}

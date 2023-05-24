@@ -1,0 +1,34 @@
+.header {
+  color: $text-color;
+  background-color: $black-color;
+  text-align: center;
+  justify-self: center;
+  display: flex;
+  padding: 12px 0;
+  line-height: 21px;
+  &_title {
+    display: inline;
+    &-name {
+      font-size: 14px;
+      display: inline;
+      margin-right: 8px;
+    }
+    &-link {
+      font-size: 14px;
+      color: $text-color;
+      line-height: 24px !important;
+      font-weight: 600;
+      text-decoration: underline;
+    }
+  }
+  &_language {
+    float: right;
+    font-weight: 400;
+    line-height: 21px;
+    display: flex;
+    font-size: 14px;
+    &-text {
+      margin-right: 11px;
+    }
+  }
+}

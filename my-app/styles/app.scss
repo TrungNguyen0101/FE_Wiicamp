@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import "global";
+@import "variables";
+@import "reset";
+
+@import "header";
+@import "navs";
+@import "card";
+@import "sales";
+@import "product";

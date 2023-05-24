@@ -1,0 +1,154 @@
+.sales {
+  padding-bottom: 59px !important;
+  border-bottom: 1px solid #000;
+  margin-top: 150px;
+  &_today {
+    color: $red-color;
+    &-text {
+      position: relative;
+      padding-left: 36px;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+
+      &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: -40%;
+        width: 20px;
+        height: 40px;
+        border-radius: 4px;
+        background-color: $red-color;
+      }
+    }
+  }
+  &_flash {
+    color: $black-color;
+    margin-top: 24px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 21px;
+    &-time {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      gap: 0 38px;
+    }
+    gap: 0 87px;
+    &-day {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      &:after {
+        content: ":";
+        position: absolute;
+        bottom: 0;
+        right: -50%;
+        font-size: 35px;
+        color: #e07575;
+      }
+      &-1 {
+        font-size: 12px;
+        font-weight: 500;
+      }
+      &-2 {
+        font-size: 32px;
+        font-weight: 700;
+      }
+    }
+    &-day1 {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+    &-desc {
+      font-size: 36px;
+      font-weight: 600;
+      line-height: 48px;
+    }
+  }
+  &_list {
+    display: flex;
+    gap: 0 30px;
+  }
+  &_item {
+    &-discount {
+      padding: 4px 12px;
+      background-color: $red-color;
+      text-align: center;
+      border-radius: 4px;
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      z-index: 12;
+      font-size: 12px;
+    }
+    &-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      &-1,
+      &-2 {
+        padding: 9px;
+        background-color: #fff;
+        border-radius: 50%;
+      }
+      &-2 {
+        margin-top: 8px;
+      }
+    }
+    &-number {
+      margin-top: 7px;
+      display: flex;
+      align-items: center;
+      color: red;
+      gap: 0 12px;
+      font-weight: 500;
+      &-1 {
+        text-decoration: line-through;
+        color: #000000;
+      }
+    }
+    &-star {
+      display: flex;
+      font-size: 14px;
+      font-weight: 600;
+      align-items: center;
+    }
+    &-show {
+      position: relative;
+    }
+    &-image {
+      padding: 49px;
+      background: #f5f5f5;
+      border-radius: 4px;
+    }
+  }
+}
+.image {
+  left: calc(50% - 172px / 2);
+  top: calc(50% - 152px / 2);
+}
+.btn {
+  padding: 16px 48px !important;
+  &-123 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 73px;
+  }
+}
+// @media (min-width: 1400px) {
+//   .sales_list {
+//     margin-left: 135px;
+//   }
+// }
