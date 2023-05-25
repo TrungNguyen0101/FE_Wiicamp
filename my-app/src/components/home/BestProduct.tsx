@@ -3,7 +3,7 @@ import Tag from "@/src/components/tag/Tag";
 import ItemSales from "@/src/components/item/ItemSales";
 
 export interface Props {}
-const Product: NextPage<Props> = () => {
+const BestProduct: NextPage<Props> = () => {
   return (
     <section className="container product">
       <Tag
@@ -21,4 +21,4 @@ const Product: NextPage<Props> = () => {
     </section>
   );
 };
-export default Product;
+export default BestProduct;
