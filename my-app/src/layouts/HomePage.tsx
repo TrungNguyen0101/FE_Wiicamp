@@ -1,18 +1,12 @@
 import { NextPage } from "next";
 import Header from "@/src/components/home/Header";
 import Nav from "@/src/components/home/Nav";
-import left from "@/public/images/DropDownLeft.png";
-import banner from "@/public/images/banner.png";
-import image from "@/public/images/g92-2-500x500 1.png";
-import view from "@/public/images/QuWishlist.png";
-import star from "@/public/images/Vick View.png";
-import heart from "@/public/images/ector.png";
-import phone from "@/public/images/phone.png";
 import Card from "@/src/components/home/Card";
-import ItemSales from "@/src/components/item/ItemSales";
-import Tag from "@/src/components/tag/Tag";
+import Product from "@/src/components/home/Product";
+import Category from "@/src/components/home/Category";
+import Sales from "@/src/components/home/Sales";
 import Image from "next/image";
-import ItemCategory from "@/src/components/item/ItemCategory";
+import Loa from "@/public/images/loa1.png";
 export interface Props {}
 const HomePage: NextPage<Props> = () => {
   return (
@@ -20,49 +14,56 @@ const HomePage: NextPage<Props> = () => {
       <Header></Header>
       <Nav></Nav>
       <Card></Card>
-      <div className="container sales ">
-        <Tag status={true} text={"Today’s"} desc={"Flash Sales"}></Tag>
-        <div className="sales_list">
-          <ItemSales sale={true}></ItemSales>
-          <ItemSales sale={true}></ItemSales>
-          <ItemSales sale={true}></ItemSales>
-          <ItemSales sale={true}></ItemSales>
+      <Sales></Sales>
+      <Category></Category>
+      <Product></Product>
+      <div className="container banner">
+        <div className="text-white banner_content banner_item">
+          <span className="text-[#00FF66] font-semibold leading-5">
+            Categories
+          </span>
+          <h2 className="text-[48px] font-semibold leading-[60px] tracking-[0.04em] whitespace-pre-wrap m-0">
+            Enhance Your Music Experience
+          </h2>
+          <div className="banner_time mt-[32px] flex gap-x-[24px]">
+            <div className="px-[16px] py-[12px] bg-white rounded-[100%] text-black flex flex-col items-center">
+              <span className="font-semibold leading-5">23</span>
+              <span className="text-[11px] font-normal leading-[18px]">
+                Hours
+              </span>
+            </div>
+            <div className="px-[16px] py-[12px] bg-white rounded-[100%] text-black flex flex-col items-center">
+              <span className="font-semibold leading-5">23</span>
+              <span className="text-[11px] font-normal leading-[18px]">
+                Hours
+              </span>
+            </div>
+            <div className="px-[16px] py-[12px] bg-white rounded-[100%] text-black flex flex-col items-center">
+              <span className="font-semibold leading-5">23</span>
+              <span className="text-[11px] font-normal leading-[18px]">
+                Hours
+              </span>
+            </div>
+            <div className="px-[16px] py-[12px] bg-white rounded-[100%] text-black flex flex-col items-center">
+              <span className="font-semibold leading-5">23</span>
+              <span className="text-[11px] font-normal leading-[18px]">
+                Hours
+              </span>
+            </div>
+          </div>
+          <div>
+            <button
+              type="button"
+              className="btn btn-danger bg-[#00FF66]  mt-[40px] font-medium"
+            >
+              Buy Now!
+            </button>
+          </div>
         </div>
-        <div className="btn-123">
-          <button type="button" className="btn btn-outline-danger">
-            View All Product
-          </button>
+        <div className="banner_image ">
+          <Image src={Loa} alt=""></Image>
         </div>
       </div>
-      <section className="container category">
-        <Tag
-          status={false}
-          text={"Categories"}
-          desc={"Browse By Category"}
-        ></Tag>
-        <div className="category_list">
-          <ItemCategory></ItemCategory>
-          <ItemCategory></ItemCategory>
-          <ItemCategory></ItemCategory>
-          <ItemCategory></ItemCategory>
-          <ItemCategory></ItemCategory>
-          <ItemCategory></ItemCategory>
-        </div>
-      </section>
-      <section className="container product">
-        <Tag
-          status={false}
-          text={"This Month"}
-          desc={"Best Selling Products"}
-          btn={true}
-        ></Tag>
-        <div className="sales_list">
-          <ItemSales sale={false}></ItemSales>
-          <ItemSales sale={false}></ItemSales>
-          <ItemSales sale={false}></ItemSales>
-          <ItemSales sale={false}></ItemSales>
-        </div>
-      </section>
     </main>
   );
 };
