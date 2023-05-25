@@ -16,11 +16,23 @@
     border-radius: 4px;
     transition: all 0.5s ease;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     &:hover {
       background-color: $red-color;
     }
     img {
       display: inline;
+    }
+    &-text {
+      display: -webkit-box;
+      line-height: 1.3;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
     // margin: 0 15px;
   }

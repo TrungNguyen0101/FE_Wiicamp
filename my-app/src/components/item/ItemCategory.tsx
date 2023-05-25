@@ -7,7 +7,7 @@ const ItemCategory: NextPage<Props> = () => {
   return (
     <div className="category_item">
       <Image src={phone} alt=""></Image>
-      <span>Phones</span>
+      <span className="w-full break-words category_item-text">Phones</span>
     </div>
   );
 };
