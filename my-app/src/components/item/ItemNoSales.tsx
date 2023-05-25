@@ -43,7 +43,7 @@ const ItemNoSales: NextPage<Props> = ({ number, color }) => {
         {color === true && (
           <div className="flex flex-row gap-x-[8px] mt-[8px] ">
             <div className="relative sales_item-circle">
-              <div className="active"></div>
+              <div className="active1"></div>
             </div>
             <div className="bg-red-500 border-0 sales_item-circle"></div>
           </div>

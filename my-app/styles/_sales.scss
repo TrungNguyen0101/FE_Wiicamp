@@ -180,6 +180,10 @@
     justify-content: center;
     align-items: center;
     margin-top: 50px;
+    transition: all 0.25s ease;
+    &:hover {
+      opacity: 0.8;
+    }
   }
   &_click {
     position: absolute;
@@ -198,7 +202,7 @@
 .swiper {
   padding-bottom: 25px !important;
 }
-.active {
+.active1 {
   position: absolute;
   width: 15px;
   height: 15px;

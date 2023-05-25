@@ -21,7 +21,7 @@ const HomePage: NextPage<Props> = () => {
       <Category></Category>
       <BestProduct></BestProduct>
       <Banner></Banner>
-      <section className="container outProduct">
+      <section className="container relative outProduct">
         <Tag
           status={false}
           text={"Our Products"}
@@ -37,12 +37,11 @@ const HomePage: NextPage<Props> = () => {
           <ItemNoSales number={"(2)"} color={true}></ItemNoSales>
           <ItemNoSales number={"(2)"} color={true}></ItemNoSales>
         </div>
-        <div className="btn-123 mt-[75px]">
-          <button type="button" className="m-auto text-center btn btn-danger">
-            View All Products
+        <div className="flex items-center justify-center mt-[60px]">
+          <button type="button" className="btn btn-danger">
+            View All Product
           </button>
         </div>
-        s
       </section>
     </main>
   );
