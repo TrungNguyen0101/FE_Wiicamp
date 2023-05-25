@@ -6,6 +6,7 @@ body {
   width: calc(100% + 16px);
   // max-width: 1440px;
 }
+
 .container {
   max-width: 1028px;
   padding: 0 !important;
@@ -18,5 +19,8 @@ body {
   .container-xl,
   .container-xxl {
     max-width: 1170px !important;
+  }
+  .list_container {
+    min-width: 1200px !important;
   }
 }

@@ -6,8 +6,9 @@ import heart from "@/public/images/Wishlist.png";
 import star from "@/public/images/Vector.png";
 export interface Props {
   sale?: boolean;
+  number?: string;
 }
-const ItemSales: NextPage<Props> = ({ sale }) => {
+const ItemSales: NextPage<Props> = ({ sale, number }) => {
   return (
     <div className="sales_item">
       <div className="sales_item-show">
@@ -38,7 +39,7 @@ const ItemSales: NextPage<Props> = ({ sale }) => {
           <Image src={star} alt=""></Image>
           <Image src={star} alt=""></Image>
           <Image src={star} alt=""></Image>
-          <span className="ml-[8px]">(0)</span>
+          <span className="ml-[8px]">{number}</span>
         </div>
       </div>
     </div>

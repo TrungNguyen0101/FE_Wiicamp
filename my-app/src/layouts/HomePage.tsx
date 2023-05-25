@@ -54,7 +54,7 @@ const HomePage: NextPage<Props> = () => {
           <div>
             <button
               type="button"
-              className="btn btn-danger bg-[#00FF66]  mt-[40px] font-medium"
+              className="btn btn-danger bg-[#00FF66]  mt-[40px] font-medium hover:bg-[#f56666] "
             >
               Buy Now!
             </button>

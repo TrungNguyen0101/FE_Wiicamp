@@ -39,8 +39,11 @@ const Tag: NextPage<Props> = ({ status, text, desc, btn }) => {
       {btn === true && (
         <div className="sales_flash sales_flash1">
           <span className="sales_flash-desc">{desc}</span>
-          <button type="button" className="sales_flash1-btn btn btn-danger">
-            Danger
+          <button
+            type="button"
+            className="sales_flash1-btn btn btn-danger hover:bg-[#ef6565]"
+          >
+            View All
           </button>
         </div>
       )}
