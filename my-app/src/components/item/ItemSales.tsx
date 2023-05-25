@@ -11,7 +11,8 @@ export interface Props {
 const ItemSales: NextPage<Props> = ({ sale, number }) => {
   return (
     <div className="sales_item">
-      <div className="sales_item-show">
+      <div className="sales_item-show ">
+        <div className="cursor-pointer activeShow">Add To Cart</div>
         <div className="sales_item-image">
           <Image src={image} alt=""></Image>
         </div>
