@@ -33,7 +33,7 @@ const Card: NextPage<Props> = () => {
           </nav>
         </div>
       </div>
-      <div className="card1_image">
+      <div className="card1_image ">
         <Image src={banner} alt=""></Image>
       </div>
     </section>
