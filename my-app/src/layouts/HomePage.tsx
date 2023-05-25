@@ -20,13 +20,13 @@ const HomePage: NextPage<Props> = () => {
       <Header></Header>
       <Nav></Nav>
       <Card></Card>
-      <div className="container sales">
+      <div className="container sales ">
         <Tag status={true} text={"Today’s"} desc={"Flash Sales"}></Tag>
         <div className="sales_list">
-          <ItemSales></ItemSales>
-          <ItemSales></ItemSales>
-          <ItemSales></ItemSales>
-          <ItemSales></ItemSales>
+          <ItemSales sale={true}></ItemSales>
+          <ItemSales sale={true}></ItemSales>
+          <ItemSales sale={true}></ItemSales>
+          <ItemSales sale={true}></ItemSales>
         </div>
         <div className="btn-123">
           <button type="button" className="btn btn-outline-danger">
@@ -54,7 +54,14 @@ const HomePage: NextPage<Props> = () => {
           status={false}
           text={"This Month"}
           desc={"Best Selling Products"}
+          btn={true}
         ></Tag>
+        <div className="sales_list">
+          <ItemSales sale={false}></ItemSales>
+          <ItemSales sale={false}></ItemSales>
+          <ItemSales sale={false}></ItemSales>
+          <ItemSales sale={false}></ItemSales>
+        </div>
       </section>
     </main>
   );

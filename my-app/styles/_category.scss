@@ -10,7 +10,7 @@
     text-align: center;
   }
   &_item {
-    width: calc((100% / 6));
+    width: calc((100% / 6 - 15px));
     padding: 24px 51px;
     border: 1px solid rgba(0, 0, 0, 0.3);
     border-radius: 4px;
