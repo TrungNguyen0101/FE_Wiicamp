@@ -19,6 +19,9 @@
     &:hover {
       background-color: $red-color;
     }
+    img {
+      display: inline;
+    }
     // margin: 0 15px;
   }
 }
