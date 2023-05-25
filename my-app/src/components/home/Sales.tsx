@@ -107,8 +107,8 @@ const Sales: NextPage<Props> = () => {
       <ItemSales sale={true} number={"(7)"}></ItemSales> */}
       {/* </div> */}
       {/* </div> */}
-      <div className="btn-123">
-        <button type="button" className="btn btn-outline-danger">
+      <div className="flex items-center justify-center">
+        <button type="button" className="btn-123 btn btn-danger">
           View All Product
         </button>
       </div>
