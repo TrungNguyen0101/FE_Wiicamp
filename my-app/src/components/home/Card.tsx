@@ -7,7 +7,7 @@ const Card: NextPage<Props> = () => {
   return (
     <section className="container card1 ">
       <div className="">
-        <div className="card1-menu mr-[16px] pr-[16px]">
+        <div className="card1-menu pr-[16px]">
           <nav className="nav flex-column ">
             <div className="card1_menu-item">
               <a className="nav-link active" aria-current="page" href="#">
